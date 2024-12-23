@@ -22,6 +22,7 @@ h1 {
 }
 h2 {
 	font-size: 20px;
+	margin-left: 20px;
 }
 .page-wrapper {
     max-width: 1600px;
@@ -39,6 +40,7 @@ h2 {
 .mainTitle {
 	position: relative;
 	top: 50px;
+	margin-left: 15px;
 	font-size: 30px;
 }
 .top {
@@ -88,6 +90,9 @@ li.mainText::marker {
 	position: relative;
 	top: 25px;
 }
+.sketches {
+	height: 350px;
+}
 .subsectionTitle {
 	position: relative;
 	top: 25px;
@@ -115,4 +120,36 @@ li.mainText::marker {
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
+}
+@media (max-width: 768px) {
+	.top {
+		height: 70px;
+		top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.logo {
+		height: 50px;
+	}
+	.logoBaner {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.1;
+		z-index: 1;
+	}
+	.headerTitle {
+		position: relative;
+		display: table-cell;
+		margin: 0;
+		font-size: 25px;
+		z-index: 2;
+	}
+	.sketches {
+		width: 90%;
+		object-fit: contain;
+	}
 }
